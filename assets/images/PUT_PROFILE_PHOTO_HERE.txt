@@ -1,0 +1,1 @@
+Optional: place the profile photo at assets/images/naresh_image.png.
