@@ -10,7 +10,7 @@ $site = [
     'phone' => '+91 8955244103',
 
     // Portfolio link supplied for the resume.
-    'portfolio' => 'https://portfolio-sahil-1503.onrender.com/',
+    'portfolio' => 'https://portfolio-svlo.onrender.com/',
 
     'resume' => 'assets/resume/Naresh_Fageria_Resume.pdf',
     'profile_image' => 'assets/images/naresh_image.png',
@@ -65,8 +65,8 @@ $site = [
             'title' => 'MS Excel Certification',
             'subtitle' => 'Microsoft Excel',
             'grade' => '',
-            'description' => 'Certified in Microsoft Excel.',
-            'file' => '#'
+            'description' => 'Completed Microsoft Excel training covering formulas, functions, formatting, data analysis, and reporting tools for efficient accounting and spreadsheet management.',
+            'file' => 'assets/certificates/msexcel.pdf'
         ]
     ]
 ];

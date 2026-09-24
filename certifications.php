@@ -41,17 +41,20 @@ require_once 'includes/header.php';
     </div>
 </section>
 
+<?php $featuredCertificate = $site['certifications'][0] ?? null; ?>
 <section class="certificate-viewer">
     <div class="container">
-        <div class="section-heading light">
-            <span>DOCUMENT</span>
-            <h2>Tally Certificate</h2>
-            <p>Open the certificate directly from the portfolio.</p>
-        </div>
+        <?php if ($featuredCertificate && $featuredCertificate['file'] !== '#'): ?>
+            <div class="section-heading light">
+                <span>DOCUMENT</span>
+                <h2><?= htmlspecialchars($featuredCertificate['title']) ?></h2>
+                <p>Open the certificate directly from the portfolio.</p>
+            </div>
 
-        <div class="pdf-box">
-            <iframe src="assets/certificates/tally.pdf" title="Tally Certificate"></iframe>
-        </div>
+            <div class="pdf-box">
+                <iframe src="<?= htmlspecialchars($featuredCertificate['file']) ?>" title="<?= htmlspecialchars($featuredCertificate['title']) ?>"></iframe>
+            </div>
+        <?php endif; ?>
     </div>
 </section>
 
